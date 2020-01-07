@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="Web.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Language" content="GBK" />
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="content" style="width: 100%;">
+        <div id="header" style="width:98%;">
+            <p style=" text-align:right;">&nbsp;</p>
+            <h1 style="margin-left:20px">HOFE无限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <span><asp:HyperLink ID="hlMemberInfo" runat="server" style="float: right;margin-right:20px; color: #000000; font-size: small;" ></asp:HyperLink></span>
+                </h1>
+        </div>
+
+        <div id="body">
+            <div id="links">
+                <p style="margin-left:40px; height: 335px; width: 101px;">
+                    <br/>
+                    <a href="Default.aspx">首页</a><br/>
+                    <br/><br/>
+                    <br/>
+                    <a href="NewsList.aspx">公司新闻</a><br/>
+                    <br/><br/>
+                    <br/>
+                    <a href="ProductList.aspx">最新产品</a><br/>
+                    <br/><br/>
+                    <br/>
+                    <a href="MemberCenter.aspx">会员中心</a><br/>
+                    <br/><br/>
+                </p>
+            </div>
+            <div id="main" style="height:315px">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>            
+            </div>
+        </div>
+        <div id="footer" class="auto-style1" style="text-align:center">
+            Copyright Huang hou feng. All Rights Reserved.<br/>
+            Design by 17计卓&nbsp; <a href="http://www.hofe.net" title="Website of hofe">1</a><a href="http://www.hofe.net">16022017004&nbsp; 黄厚锋</a>.<br />
+            ASP.NET 课程设计&nbsp; 2019年12月&nbsp;
+        </div>
+    </div>
+    </form>
+</body>
+</html>
